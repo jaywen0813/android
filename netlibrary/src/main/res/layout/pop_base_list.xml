@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_value_dp50"
+        android:layout_marginRight="@dimen/dimen_value_dp50"
+        app:rv_backgroundColor="@color/color_1E242C"
+        app:rv_cornerRadius="@dimen/dimen_value_dp5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_pop_list"
+           android:layout_marginTop="@dimen/dimen_value_dp5"
+            android:layout_marginBottom="@dimen/dimen_value_dp5"
+            style="@style/MatchWrap">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.flyco.roundview.RoundLinearLayout>
+</LinearLayout>

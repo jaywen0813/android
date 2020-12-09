@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_value_dp30">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/reservation_success_top_im" />
+
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_value_dp20"
+        app:rv_backgroundColor="@color/color_000000"
+        app:rv_cornerRadius_BL="@dimen/dimen_value_dp5"
+        app:rv_cornerRadius_BR="@dimen/dimen_value_dp5">
+
+        <TextView
+            android:id="@+id/dialogTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="恭喜，预约维保成功！"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialogLocationTv"
+            style="@style/home_middle_text"
+            android:layout_marginTop="@dimen/dimen_value_dp20"
+            android:drawableLeft="@mipmap/location_icon"
+            android:drawablePadding="@dimen/dimen_value_dp5"
+            android:text="武汉沌口店"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_value_dp8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialogTimeTv"
+                style="@style/home_middle_text"
+
+                android:drawableLeft="@mipmap/reservation_time_icon"
+                android:drawablePadding="@dimen/dimen_value_dp5"
+                android:text="2019/09/02  09:00-12:00"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/dialogScaleIm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_value_dp3"
+                android:src="@mipmap/dialog_scale" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dialogNameTv"
+            style="@style/home_middle_text"
+            android:layout_marginTop="@dimen/dimen_value_dp8"
+            android:drawableLeft="@mipmap/contact_icon"
+            android:drawablePadding="@dimen/dimen_value_dp5"
+            android:text="杨铭澄  13419507557"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dialogNumberTv"
+            style="@style/home_middle_text"
+            android:layout_marginTop="@dimen/dimen_value_dp8"
+            android:drawableLeft="@mipmap/number_icon"
+            android:drawablePadding="@dimen/dimen_value_dp5"
+            android:text="鄂A62YC1"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_value_dp30"
+            android:gravity="center|left"
+            android:text="请于当天前往门店进行维保。\n* 如需要取消，请在个人中心页面我的预约中进行取消。"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+        <!--        <com.flyco.roundview.RoundTextView-->
+        <!--            android:id="@+id/confirmButtonTv"-->
+        <!--            style="@style/MatchWrap.btn_usercenter"-->
+        <!--            android:layout_marginLeft="0dp"-->
+        <!--            android:layout_marginTop="@dimen/dimen_value_dp30"-->
+        <!--            android:layout_marginRight="0dp"-->
+        <!--            android:layout_marginBottom="0dp"-->
+        <!--            android:paddingRight="@dimen/dimen_value_dp30"-->
+        <!--            android:paddingLeft="@dimen/dimen_value_dp30"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:drawableLeft="@mipmap/double_left_black"-->
+        <!--            android:drawableRight="@mipmap/double_right_black"-->
+        <!--            android:text="确定"-->
+        <!--            app:rv_cornerRadius="5dp" />-->
+        <!--    </com.flyco.roundview.RoundLinearLayout>-->
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:id="@+id/nextStepTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_value_dp45"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            app:rv_backgroundColor="@color/colorPrimary"
+            app:rv_backgroundPressColor="@color/colorPress"
+            app:rv_cornerRadius="@dimen/dp_23">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_value_dp45"
+                android:layout_gravity="center"
+                android:drawableRight="@mipmap/double_right_black"
+                android:drawableLeft="@mipmap/double_left_black"
+                android:drawablePadding="@dimen/dimen_value_dp30"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_value_sp15" />
+        </com.flyco.roundview.RoundLinearLayout>
+    </com.flyco.roundview.RoundLinearLayout>
+
+</LinearLayout>

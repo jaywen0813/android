@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:rv_backgroundColor="@color/color_1E242C"
+    app:rv_cornerRadius="@dimen/dimen_value_dp8">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_value_dp50"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:text="正在下载"
+        android:textColor="@color/white" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberprogressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_value_dp15"
+        app:progress_reached_color="@color/colorPrimary"
+        app:progress_text_color="@color/colorPrimary"
+        app:progress_unreached_color="@color/regis_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_value_dp1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/color_3B4757"/>
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/down_cancel_rtv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_value_dp30"
+        android:layout_margin="@dimen/dimen_value_dp10"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="@dimen/dimen_value_sp14"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        app:rv_cornerRadius="@dimen/dimen_value_dp5" />
+</com.flyco.roundview.RoundLinearLayout>

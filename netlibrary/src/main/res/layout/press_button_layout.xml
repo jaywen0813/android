@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_button_height"
+    android:layout_marginLeft="@dimen/dimen_value_dp30"
+    android:layout_marginRight="@dimen/dimen_value_dp30"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:rv_backgroundColor="@color/colorPrimary"
+    app:rv_backgroundPressColor="@color/colorPress"
+    android:background="@mipmap/login_button_bg"
+    app:rv_cornerRadius="23dp">
+<!--        android:background="@mipmap/login_button_bg"-->
+    <ImageView
+        android:id="@+id/commonLeftIm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_value_dp50"
+        android:src="@mipmap/double_right_black" />
+
+    <TextView
+        android:id="@+id/commonText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/color_171717"
+        android:textSize="@dimen/dimen_value_sp15" />
+
+
+    <ImageView
+        android:id="@+id/commonRightIm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_value_dp50"
+        android:src="@mipmap/double_left_black" />
+</com.flyco.roundview.RoundLinearLayout>

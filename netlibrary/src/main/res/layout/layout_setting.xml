@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/setting_item_height"
+    android:gravity="center"
+    android:background="@drawable/selector_bg_onclick_white_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_setting_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_value_dp20"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/tv_setting"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_value_dp16"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/iv_setting_left_icon"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_value_dp15"/>
+
+        <TextView
+            android:id="@+id/tv_setting_detail"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_value_dp15"
+            android:textColor="@color/white"
+            android:layout_toLeftOf="@+id/iv_setting_right_icon"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_value_dp13"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_value_dp13"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app', ':mvp', ':library', ':libraryone', ':netlibrary', ':utillibrary'
+rootProject.name='android'

@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dpad.telematicsclientapp.netlibrary" >
+
+
+
+    <application
+        android:name=".MainApplicaton"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
+    <activity android:name="com.dpad.telematicsclientapp.weiget.idcardcamera.camera.CameraActivity" />
+
+
+    </application>
+
+</manifest>

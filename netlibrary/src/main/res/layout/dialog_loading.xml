@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    style="@style/WrapWrap.Vertical"
+    android:gravity="center"
+    android:padding="@dimen/dimen_value_dp15"
+    wheel:rv_backgroundColor="#80000000"
+    wheel:rv_cornerRadius="@dimen/dimen_value_dp8">
+
+
+    <com.dpad.telematicsclientapp.weiget.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="@dimen/dimen_value_dp30"
+        android:layout_height="@dimen/dimen_value_dp30"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/base_white"
+        wheel:matProg_barWidth="@dimen/dimen_value_dp2"
+        wheel:matProg_progressIndeterminate="true"/>
+
+    <TextView
+        android:id="@+id/tv_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_value_dp15"
+        android:textColor="@color/base_white"
+        android:textSize="@dimen/dimen_value_dp11"/>
+
+</com.flyco.roundview.RoundLinearLayout>

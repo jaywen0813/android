@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Horizontal"
+    android:layout_marginBottom="@dimen/dimen_value_dp15"
+    android:layout_marginLeft="@dimen/dimen_value_dp30"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dimen_value_dp15"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv_title_dialog_basic"
+        style="@style/AutoWrap"
+        android:text="提示"
+        android:textSize="@dimen/dimen_value_sp16"/>
+
+    <ImageView
+        android:id="@+id/iv_dialog_basic_close"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+       />
+</LinearLayout>
