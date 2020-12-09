@@ -43,6 +43,7 @@ import retrofit2.HttpException;
  */
 public class PinDialogUtils {
 
+
     private static Activity context;
 
     private PinDialog pinDialog;
