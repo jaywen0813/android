@@ -84,6 +84,7 @@ public class PinDialogUtils {
                     context.startActivity(new Intent(context, HomeActivity.class));
                 }
 
+
                 @Override
                 public void fingerFail() {
                     checkPin();
