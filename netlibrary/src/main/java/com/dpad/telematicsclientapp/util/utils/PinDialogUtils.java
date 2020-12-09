@@ -70,6 +70,7 @@ public class PinDialogUtils {
                     pinDialogUtils = new PinDialogUtils();
                 }
             }
+
         }
         return pinDialogUtils;
     }
